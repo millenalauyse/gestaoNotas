@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cadastrar Nota</title>
+</head>
+<body>
+
+ <h3>Gestão de Notas</h3>
+                <form action="cadastrarNota">
+                    Código de Matrícula: <br/><input type="number" name="codMatricula" /><br />
+                    Nome do Aluno: <br/><input type="text" name="nome" /><br />                   
+                    Nota 1:<br/> <input type="text" name="nota1" required oninvalid="setCustomValidity('Por favor, informe a nota')"
+                    onchange="try{setCustomValidity('')}catch(e){}" /><br />
+                    Nota 2: <br/><input type="text" name="nota2" required oninvalid="setCustomValidity('Por favor, informe a nota')"
+                    onchange="try{setCustomValidity('')}catch(e){}"  /><br /> </br>
+
+                    <input type="submit" value="Cadastrar" />
+                </form>
+<a href="index.html">Pagina Inicial</a> 
+</body>
+</html>
